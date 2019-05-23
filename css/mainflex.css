@@ -5,6 +5,13 @@
 	font-family: 'Open Sans', sans-serif; 
 }
 
+body {
+	background-color: #fcf2fb;
+	background-image: url('../img/ribbon-bg-2.png');
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
 .container {
 	position: relative;
 	width: 100%;
@@ -16,9 +23,9 @@
 
 .sticky-header {
 	position: absolute;
-	padding: 0.5em;
 	width: 100%;
 	overflow: hidden;
+	top: 0;
 	right: 0;
 	left: 0;
 	z-index: 999;
@@ -76,19 +83,144 @@
 	color: #dddddd;
 }
 
-/* Main Page */
-
-#ribbon-bg {
-	width: 100%;
+h1 {
+	color: #F90B6D; 
+	font-family: 'Open Sans', sans-serif; 
+	font-size: 12px; 
+	font-weight: 300; 
+	line-height: 15px; 
+	margin: 0 0 16px;
 }
 
-.main-page {
-	background-color: #fcf2fb;
+h2 { 
+	color: #F90B6D; 
+	font-family: 'Open Sans', sans-serif; 
+	font-size: 24px; 
+	font-weight: 300; 
+	line-height: 32px; 
+	margin: 0 0 14px; }
+
+
+p { 
+	color: #222; 
+	font-family: 'Open Sans', sans-serif; 
+	font-size: 15px; 
+	font-weight: 400; 
+	line-height: 24px; 
+	margin: 0 0 14px; }
+
+.mission {
+	position: absolute;
+	top: 120px;
+	left: 50%;
+	width: 40%;
 }
 
 /* Media Queries */
 
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 679px) {
+	* {
+		box-sizing: border-box;
+		font-family: 'Open Sans', sans-serif; 
+	}
+
+	body {
+		background-color: #efefef;
+		background-image: url('../img/ribbon-bg-2.png');
+		background-repeat: no-repeat;
+		background-size: cover;
+	}
+
+	.sticky-header {
+		padding: 0.5em;
+		width: 100%;
+		overflow: hidden;
+		right: 0;
+		left: 0;
+		z-index: 999;
+		background-color: transparent;
+	}
+	
+	.logo {
+		justify-content: flex-start;
+		width: 4%;
+		padding-left: 1vw;
+		display: block;
+	}
+
+	.menu {
+		display: none;
+	}
+
+	.main-nav {
+		display: flex;
+		justify-content: flex-end;
+	}
+	
+	.main-nav ul {
+		display: flex;
+		flex-direction: row;
+		justify-content: flex-end;
+		align-items: stretch;
+		padding-top: 20px;
+	}
+	
+	.main-nav li {
+		padding: 0.5vw;
+	}
+	
+	.main-nav a {
+		display: inline-block;
+		font-size: x-large;
+		padding: 0.3em 0.5em 0.5em 0.5em;
+		color: #565453;
+		text-decoration: none;
+	}
+	
+	.main-nav a:hover {
+		color: #F90B6D;
+		text-decoration: none;
+	}
+
+	.main-nav-dropdown {
+		display: none;
+	}
+
+	h1 {
+		color: #F90B6D; 
+		font-family: 'Open Sans', sans-serif; 
+		font-size: 20px; 
+		font-weight: 300; 
+		line-height: 25px; 
+		margin: 0 0 16px;
+	}
+
+	h2 { 
+		color: #F90B6D; 
+		font-family: 'Open Sans', sans-serif; 
+		font-size: 24px; 
+		font-weight: 300; 
+		line-height: 32px; 
+		margin: 0 0 14px; }
+
+
+	p { 
+		color: #222; 
+		font-family: 'Open Sans', sans-serif; 
+		font-size: 15px; 
+		font-weight: 400; 
+		line-height: 24px; 
+		margin: 0 0 14px; }
+
+	.mission {
+		position: absolute;
+		top: 150px;
+		left: 50%;
+		width: 40%;
+	}
+}
+
+@media only screen and (min-width: 925px) {
 	* {
 		box-sizing: border-box;
 		font-family: 'Open Sans', sans-serif; 
@@ -184,7 +316,109 @@
 
 	.mission {
 		position: absolute;
-		top: 30%;
+		top: 150px;
+		left: 50%;
+		width: 40%;
+	}
+}
+
+@media only screen and (min-width: 1024px) {
+	* {
+		box-sizing: border-box;
+		font-family: 'Open Sans', sans-serif; 
+	}
+
+	body {
+		background-color: #efefef;
+		background-image: url('../img/ribbon-bg-2.png');
+		background-repeat: no-repeat;
+		background-size: cover;
+	}
+
+	.sticky-header {
+		padding: 0.5em;
+		width: 100%;
+		overflow: hidden;
+		right: 0;
+		left: 0;
+		z-index: 999;
+		background-color: transparent;
+	}
+	
+	.logo {
+		justify-content: flex-start;
+		width: 4%;
+		padding-left: 1vw;
+		display: block;
+	}
+
+	.menu {
+		display: none;
+	}
+
+	.main-nav {
+		display: flex;
+		justify-content: flex-end;
+	}
+	
+	.main-nav ul {
+		display: flex;
+		flex-direction: row;
+		justify-content: flex-end;
+		align-items: stretch;
+		padding-top: 20px;
+	}
+	
+	.main-nav li {
+		padding: 0.5vw;
+	}
+	
+	.main-nav a {
+		display: inline-block;
+		font-size: x-large;
+		padding: 0.3em 0.5em 0.5em 0.5em;
+		color: #565453;
+		text-decoration: none;
+	}
+	
+	.main-nav a:hover {
+		color: #F90B6D;
+		text-decoration: none;
+	}
+
+	.main-nav-dropdown {
+		display: none;
+	}
+
+	h1 {
+		color: #F90B6D; 
+		font-family: 'Open Sans', sans-serif; 
+		font-size: 34px; 
+		font-weight: 300; 
+		line-height: 40px; 
+		margin: 0 0 16px;
+	}
+
+	h2 { 
+		color: #F90B6D; 
+		font-family: 'Open Sans', sans-serif; 
+		font-size: 24px; 
+		font-weight: 300; 
+		line-height: 32px; 
+		margin: 0 0 14px; }
+
+
+	p { 
+		color: #222; 
+		font-family: 'Open Sans', sans-serif; 
+		font-size: 15px; 
+		font-weight: 400; 
+		line-height: 24px; 
+		margin: 0 0 14px; }
+
+	.mission {
+		position: absolute;
+		top: 200px;
 		left: 50%;
 		width: 40%;
 	}
