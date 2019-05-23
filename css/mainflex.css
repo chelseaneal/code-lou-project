@@ -95,7 +95,10 @@
 	}
 
 	body {
-		background: #efefef url('img/ribbon-bg-2.png') repeat fixed top left; 
+		background-color: #efefef;
+		background-image: url('../img/ribbon-bg-2.png');
+		background-repeat: no-repeat;
+		background-size: cover;
 	}
 
 	.sticky-header {
