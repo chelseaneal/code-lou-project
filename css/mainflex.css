@@ -1,0 +1,188 @@
+/* Base Styles */
+
+* {
+	box-sizing: border-box;
+	font-family: 'Open Sans', sans-serif; 
+}
+
+.container {
+	position: relative;
+	width: 100%;
+	margin: 0 auto;
+	padding: 12px 0px;
+	background-color: teal;
+	overflow: auto;
+}
+
+.sticky-header {
+	position: absolute;
+	padding: 0.5em;
+	width: 100%;
+	overflow: hidden;
+	right: 0;
+	left: 0;
+	z-index: 999;
+	background-color: #ffffff;
+	opacity: 0.8;
+	filter: alpha(opacity=80);
+}
+
+.logo {
+	float: left;
+	width: 5%;
+	padding-left: 1vw;
+}
+
+.main-nav {
+	display: none;
+}
+
+.main-nav-dropdown {
+	display: none;
+}
+
+.menu {
+	float: right;
+	width: 5%;
+	margin-right: 2vw;
+	display: block;
+}
+
+.menu:hover {
+	border: 1px solid black;
+}
+
+.menu:hover .main-nav-dropdown{
+	display: block;
+}
+
+.menu:hover .main-nav-dropdown li{
+	display: block;
+	padding: 0.5vw;
+	background-color: #ffffff;
+	opacity: 0.8;
+	filter: alpha(opacity=80);
+}
+
+.menu:hover .main-nav-dropdown a {
+	display: block;
+	font-size: large;
+	padding: 0.3em 0.5em 0.5em 0.5em;
+	color: #565453;
+	text-decoration: none;
+}
+
+.main-nav-dropdown a:hover {
+	color: #dddddd;
+}
+
+/* Main Page */
+
+#ribbon-bg {
+	width: 100%;
+}
+
+.main-page {
+	background-color: #fcf2fb;
+}
+
+/* Media Queries */
+
+@media only screen and (min-width: 768px) {
+	* {
+		box-sizing: border-box;
+		font-family: 'Open Sans', sans-serif; 
+	}
+
+	body {
+		background: #efefef url('img/ribbon-bg-2.png') repeat fixed top left; 
+	}
+
+	.sticky-header {
+		padding: 0.5em;
+		width: 100%;
+		overflow: hidden;
+		right: 0;
+		left: 0;
+		z-index: 999;
+		background-color: transparent;
+	}
+	
+	.logo {
+		justify-content: flex-start;
+		width: 4%;
+		padding-left: 1vw;
+		display: block;
+	}
+
+	.menu {
+		display: none;
+	}
+
+	.main-nav {
+		display: flex;
+		justify-content: flex-end;
+	}
+	
+	.main-nav ul {
+		display: flex;
+		flex-direction: row;
+		justify-content: flex-end;
+		align-items: stretch;
+		padding-top: 20px;
+	}
+	
+	.main-nav li {
+		padding: 0.5vw;
+	}
+	
+	.main-nav a {
+		display: inline-block;
+		font-size: x-large;
+		padding: 0.3em 0.5em 0.5em 0.5em;
+		color: #565453;
+		text-decoration: none;
+	}
+	
+	.main-nav a:hover {
+		color: #F90B6D;
+		text-decoration: none;
+	}
+
+	.main-nav-dropdown {
+		display: none;
+	}
+
+	h1 {
+		color: #F90B6D; 
+		font-family: 'Open Sans', sans-serif; 
+		font-size: 34px; 
+		font-weight: 300; 
+		line-height: 40px; 
+		margin: 0 0 16px;
+	}
+
+	h2 { 
+		color: #F90B6D; 
+		font-family: 'Open Sans', sans-serif; 
+		font-size: 24px; 
+		font-weight: 300; 
+		line-height: 32px; 
+		margin: 0 0 14px; }
+
+
+	p { 
+		color: #222; 
+		font-family: 'Open Sans', sans-serif; 
+		font-size: 15px; 
+		font-weight: 400; 
+		line-height: 24px; 
+		margin: 0 0 14px; }
+
+	.mission {
+		position: absolute;
+		top: 30%;
+		left: 50%;
+		width: 40%;
+	}
+}
