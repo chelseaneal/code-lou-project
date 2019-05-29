@@ -6,8 +6,7 @@
 }
 
 body {
-	background-color: #fcf2fb;
-	background-image: url('../img/ribbon-bg-2.png');
+	background-color: #efefef;
 	background-repeat: no-repeat;
 	background-size: cover;
 }
@@ -22,7 +21,7 @@ body {
 }
 
 .sticky-header {
-	position: absolute;
+	position: relative;
 	width: 100%;
 	overflow: hidden;
 	top: 0;
@@ -30,8 +29,6 @@ body {
 	left: 0;
 	z-index: 999;
 	background-color: #ffffff;
-	opacity: 0.8;
-	filter: alpha(opacity=80);
 	display: flex;
 	flex-direction: row;
 	justify-content: space-between;
@@ -45,74 +42,22 @@ body {
 	padding-left: 1vw;
 }
 
-.main-nav {
-	display: none;
-}
-
-.main-nav-dropdown {
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	z-index: 999;
-	background-color: #ffffff;
-	opacity: 0.8;
-	filter: alpha(opacity=80);
-}
-
 .menu {
 	margin-right: 20px;
 	max-height: 2em;
 }
 
-.menu img:hover {
-	border: 1px solid black;
+.main-nav {
+	display: none;
 }
 
-.menu img:hover > .main-nav-dropdown a{
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	z-index: 999;
-	background-color: #ffffff;
-	opacity: 0.8;
-	filter: alpha(opacity=80);
-}
-
-.main-nav-dropdown ul{
-	display: flex;
-	list-style: none;
-}
-
-.main-nav-dropdown ul li{
-	position: relative;
-	width: 100%;
-	text-align: center;
-}
-
-.menu:hover > .main-nav-dropdown li {
-	padding: 0.5vw;
-	background-color: #ffffff;
-	opacity: 0.8;
-	filter: alpha(opacity=80);
-}
-
-.menu:hover .main-nav-dropdown a {
-	font-size: large;
-	padding: 0.3em 0.5em 0.5em 0.5em;
-	color: #565453;
-	text-decoration: none;
-}
-
-.main-nav-dropdown a:hover {
-	color: #dddddd;
-}
 
 h1 {
 	color: #F90B6D; 
 	font-family: 'Open Sans', sans-serif; 
-	font-size: 12px; 
+	font-size: 1.2em; 
 	font-weight: 300; 
-	line-height: 15px; 
+	line-height: 1em; 
 	margin: 0 0 16px;
 }
 
@@ -133,16 +78,40 @@ p {
 	line-height: 24px; 
 	margin: 0 0 14px; }
 
+.main-page {
+	background-color: pink;
+	background-image: url(../img/ribbon-bg-2.png);
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	display: flex;
+	align-items: center;
+	justify-content: flex-end;
+	height: 50vh;
+	padding-right: 10%;
+}
+
 .mission {
-	position: absolute;
-	top: 120px;
-	left: 50%;
-	width: 40%;
+	width: 200px;
+	background-color: #efefef;
+	opacity: 0.8;
+	width: 45%;
+}
+
+.mission h1 {
+	padding: 1em;
+}
+
+
+/* Main Page */
+#ribbon-bg {
+	width: 100%;
+	max-height: 89vh;
 }
 
 /* Media Queries */
 
-@media only screen and (min-width: 679px) {
+@media only screen and (min-width: 550px) {
 	* {
 		box-sizing: border-box;
 		font-family: 'Open Sans', sans-serif; 
@@ -150,7 +119,6 @@ p {
 
 	body {
 		background-color: #efefef;
-		background-image: url('../img/ribbon-bg-2.png');
 		background-repeat: no-repeat;
 		background-size: cover;
 	}
@@ -162,7 +130,7 @@ p {
 		right: 0;
 		left: 0;
 		z-index: 999;
-		background-color: transparent;
+		background-color: #efefef;
 		display: flex;
 		flex-direction: row;
 		justify-content: space-between;
@@ -199,7 +167,7 @@ p {
 	.main-nav a {
 		display: inline-block;
 		font-size: x-large;
-		padding: 0.3em 0.5em 0.5em 0.5em;
+		padding: 0 0.5em;
 		color: #565453;
 		text-decoration: none;
 	}
@@ -238,200 +206,11 @@ p {
 		font-weight: 400; 
 		line-height: 24px; 
 		margin: 0 0 14px; }
-
-	.mission {
-		position: absolute;
-		top: 150px;
-		left: 50%;
-		width: 40%;
-	}
 }
 
-@media only screen and (min-width: 925px) {
-	* {
-		box-sizing: border-box;
-		font-family: 'Open Sans', sans-serif; 
-	}
+@media only screen and (min-width: 833px) {
 
-	body {
-		background-color: #efefef;
-		background-image: url('../img/ribbon-bg-2.png');
-		background-repeat: no-repeat;
-		background-size: cover;
-	}
-
-	.sticky-header {
-		padding: 0.5em;
-		width: 100%;
-		overflow: hidden;
-		right: 0;
-		left: 0;
-		z-index: 999;
-		background-color: transparent;
-		display: flex;
-		flex-direction: row;
-		justify-content: space-between;
-	}
-	
-	.logo {
-		margin-right: auto;
-		min-width: 1em;
-		max-height: 50px;
-		padding-left: 1vw;
-	}
-
-	.menu {
-		display: none;
-	}
-	
-	.main-nav ul {
-		padding-top: 20px;
-	}
-	
-	
-	.main-nav li {
-		padding: 0.5vw;
-	}
-	
-	.main-nav a {
-		display: inline-block;
-		font-size: x-large;
-		padding: 0.3em 0.5em 0.5em 0.5em;
-		color: #565453;
-		text-decoration: none;
-	}
-	
-	.main-nav a:hover {
-		color: #F90B6D;
-		text-decoration: none;
-	}
-
-	.main-nav-dropdown {
-		display: none;
-	}
-
-	h1 {
-		color: #F90B6D; 
-		font-family: 'Open Sans', sans-serif; 
-		font-size: 34px; 
-		font-weight: 300; 
-		line-height: 40px; 
-		margin: 0 0 16px;
-	}
-
-	h2 { 
-		color: #F90B6D; 
-		font-family: 'Open Sans', sans-serif; 
-		font-size: 24px; 
-		font-weight: 300; 
-		line-height: 32px; 
-		margin: 0 0 14px; }
-
-
-	p { 
-		color: #222; 
-		font-family: 'Open Sans', sans-serif; 
-		font-size: 15px; 
-		font-weight: 400; 
-		line-height: 24px; 
-		margin: 0 0 14px; }
-
-	.mission {
-		position: absolute;
-		top: 150px;
-		left: 50%;
-		width: 40%;
-	}
-}
-
-@media only screen and (min-width: 1024px) {
-	* {
-		box-sizing: border-box;
-		font-family: 'Open Sans', sans-serif; 
-	}
-
-	body {
-		background-color: #efefef;
-		background-image: url('../img/ribbon-bg-2.png');
-		background-repeat: no-repeat;
-		background-size: cover;
-	}
-
-	.sticky-header {
-		padding: 0.5em;
-		width: 100%;
-		right: 0;
-		left: 0;
-		z-index: 999;
-		background-color: transparent;
-		display: flex;
-		flex-direction: row;
-		justify-content: space-between;
-
-	}
-	
-	.logo {
-		margin-right: auto;
-		min-width: 1em;
-		max-height: 50px;
-		padding-left: 1vw;
-	}
-
-	.menu {
-		display: none;
-	}
-	
-	.main-nav li {
-		padding: 0.5vw;
-	}
-	
-	.main-nav a {
-		display: inline-block;
-		font-size: x-large;
-		padding: 0.3em 0.5em 0.5em 0.5em;
-		color: #565453;
-		text-decoration: none;
-	}
-	
-	.main-nav a:hover {
-		color: #F90B6D;
-		text-decoration: none;
-	}
-
-	.main-nav-dropdown {
-		display: none;
-	}
-
-	h1 {
-		color: #F90B6D; 
-		font-family: 'Open Sans', sans-serif; 
-		font-size: 34px; 
-		font-weight: 300; 
-		line-height: 40px; 
-		margin: 0 0 16px;
-	}
-
-	h2 { 
-		color: #F90B6D; 
-		font-family: 'Open Sans', sans-serif; 
-		font-size: 24px; 
-		font-weight: 300; 
-		line-height: 32px; 
-		margin: 0 0 14px; }
-
-
-	p { 
-		color: #222; 
-		font-family: 'Open Sans', sans-serif; 
-		font-size: 15px; 
-		font-weight: 400; 
-		line-height: 24px; 
-		margin: 0 0 14px; }
-
-	.mission {
-		position: absolute;
-		top: 200px;
-		left: 50%;
-		width: 40%;
+	.main-page {
+		height: 90vh;
 	}
 }
