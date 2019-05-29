@@ -20,7 +20,7 @@ body {
 	overflow: auto;
 }
 
-.sticky-header {
+.banner {
 	position: relative;
 	width: 100%;
 	overflow: hidden;
@@ -28,14 +28,14 @@ body {
 	right: 0;
 	left: 0;
 	z-index: 999;
-	background-color: #ffffff;
+	background-color: #efefef;
 	display: flex;
 	flex-direction: row;
 	justify-content: space-between;
 	align-items: center;
 }
 
-.logo {
+#logo {
 	margin-right: auto;
 	min-width: 1em;
 	max-height: 50px;
@@ -80,26 +80,47 @@ p {
 
 .main-page {
 	background-color: pink;
-	background-image: url(../img/ribbon-bg-2.png);
-	background-position: center;
+	background-image: url(../img/race-edit.png);
+	background-position: 50% 30%;
 	background-repeat: no-repeat;
 	background-size: cover;
 	display: flex;
 	align-items: center;
-	justify-content: flex-end;
+	justify-content: center;
 	height: 50vh;
 	padding-right: 10%;
 }
 
-.mission {
-	width: 200px;
-	background-color: #efefef;
-	opacity: 0.8;
-	width: 45%;
+.title {
+	/* margin-right: 25%; */
+	margin-left: 12%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	border-radius: 25px;
+	border: solid 1px #efefef;
+	padding: 20px 20px 10px 20px;
+	width: 300px;
+	background-color: rgba(86, 84, 83, 0.7);
 }
 
-.mission h1 {
-	padding: 1em;
+
+.title h1 {
+	font-family: 'Arvo', serif;
+	color: #efefef;
+	font-size: 2.7em;  
+	line-height: 30px; 
+}
+
+.mission {
+	font-family: 'Open Sans', sans-serif;
+	color: #efefef;
+	font-size: 0.8em;
+	line-height: 1em;
+	/* width: 90%; */
+	width: 240px;
+	text-align: justify;
 }
 
 
@@ -123,7 +144,7 @@ p {
 		background-size: cover;
 	}
 
-	.sticky-header {
+	.banner {
 		padding: 0.5em;
 		width: 100%;
 		overflow: hidden;
@@ -135,12 +156,9 @@ p {
 		flex-direction: row;
 		justify-content: space-between;
 	}
-	
-	.logo {
-		margin-right: auto;
-		min-width: 1em;
-		max-height: 50px;
-		padding-left: 1vw;
+
+	#logo {
+		display: none;
 	}
 
 	.menu {
@@ -148,8 +166,10 @@ p {
 	}
 
 	.main-nav {
+		width: 100%;
 		display: flex;
-		justify-content: flex-end;
+		justify-content: space-evenly;
+		align-items: center;
 	}
 	
 	.main-nav ul {
@@ -160,16 +180,14 @@ p {
 		padding-top: 20px;
 	}
 	
-	.main-nav li {
-		padding: 0.5vw;
-	}
-	
 	.main-nav a {
 		display: inline-block;
-		font-size: x-large;
+		font-size: 1.2em;
 		padding: 0 0.5em;
 		color: #565453;
 		text-decoration: none;
+		text-transform: uppercase;
+		font-family: "Abel";
 	}
 	
 	.main-nav a:hover {
@@ -181,7 +199,12 @@ p {
 		display: none;
 	}
 
-	h1 {
+	#nav-logo {
+		min-width: 1em;
+		max-height: 40px;
+	}
+
+	/* h1 {
 		color: #F90B6D; 
 		font-family: 'Open Sans', sans-serif; 
 		font-size: 20px; 
@@ -196,7 +219,7 @@ p {
 		font-size: 24px; 
 		font-weight: 300; 
 		line-height: 32px; 
-		margin: 0 0 14px; }
+		margin: 0 0 14px; } */
 
 
 	p { 
@@ -211,6 +234,38 @@ p {
 @media only screen and (min-width: 833px) {
 
 	.main-page {
-		height: 90vh;
+		height: 60vh;
+		width: 100%;
+	}
+
+	.title {
+		/* margin-right: 25%; */
+		margin-left: 12%;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		border-radius: 25px;
+		border: solid 1px #efefef;
+		padding: 20px 20px 5px 20px;
+		width: 350px;
+		background-color: rgba(86, 84, 83, 0.7);
+	}
+
+
+	.title h1 {
+		font-family: 'Arvo', serif;
+		color: #efefef;
+		font-size: 3.375em;  
+		line-height: 35px; 
+	}
+
+	.mission {
+		font-family: 'Open Sans', sans-serif;
+		color: #efefef;
+		font-size: 0.9em;
+		line-height: 0.975em;
+		width: 270px;
+		text-align: left;
 	}
 }
