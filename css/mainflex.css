@@ -1,4 +1,4 @@
-/* Base Styles */
+/* Header */
 
 * {
 	box-sizing: border-box;
@@ -11,15 +11,6 @@ body {
 	background-size: cover;
 }
 
-.container {
-	position: relative;
-	width: 100%;
-	margin: 0 auto;
-	padding: 12px 0px;
-	background-color: teal;
-	overflow: auto;
-}
-
 .banner {
 	position: relative;
 	width: 100%;
@@ -27,7 +18,7 @@ body {
 	top: 0;
 	right: 0;
 	left: 0;
-	z-index: 999;
+	z-index: 700;
 	background-color: #efefef;
 	display: flex;
 	flex-direction: row;
@@ -42,15 +33,53 @@ body {
 	padding-left: 1vw;
 }
 
+/* Menu */
+
 .menu {
-	margin-right: 20px;
 	max-height: 2em;
 }
+
+.menu-button {
+	border: none;
+	cursor: pointer;
+	background-color: transparent;
+	margin-right: 10px;
+}
+
+.menu-button:hover, .menu-button:focus {
+	border: solid black 1px;
+}
+
+.dropdown {
+	position: relative;
+	display: inline-block;
+}
+
+.dropdown-content {
+	display: none;
+	position: absolute;
+	background-color: pink;
+	min-width: 160px;
+	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+	z-index: 900;
+}
+
+.dropdown-content a {
+	color: black;
+	padding: 12px 16px;
+	text-decoration: none;
+	display: block;
+}
+
+.dropdown-content a:hover {background-color: #ddd}
+
+.show {display:block;}
 
 .main-nav {
 	display: none;
 }
 
+/* Mission Styling */
 
 h1 {
 	color: #F90B6D; 
@@ -123,12 +152,84 @@ p {
 	text-align: justify;
 }
 
+/* Content Columns */
 
-/* Main Page */
-#ribbon-bg {
-	width: 100%;
-	max-height: 89vh;
+.intro {
+	display: flex;
+	flex-direction: column;
 }
+
+.col {
+	background: transparent;
+	padding: 1em;
+	margin: 1em; 
+}
+
+.col1 {
+	border: solid black 1.5px;
+	border-radius: 15px;
+}
+
+.img1{
+	display: none;
+}
+
+/* .col2 {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	align-content: center;
+	background: transparent;
+	background-image: url(../img/pink-stable.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: 50% 30%;
+} */
+
+.col2 {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	align-content: center;
+    position: relative;
+    background: white;
+	overflow: hidden;
+	border: solid black 1.5px;
+	border-radius: 15px;
+}
+
+.col2:before {
+    content: ' ';
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+	opacity: 0.4;
+	background-image: url(../img/pink-stable.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: 50% 30%;	
+}
+
+.stable-title {
+	align-self: center;
+	z-index: 2;
+}
+
+.stable {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	z-index: 2;
+}
+
+.stable-list {
+	font-family: 'Open Sans', sans-serif;
+}
+
 
 /* Media Queries */
 
@@ -150,7 +251,7 @@ p {
 		overflow: hidden;
 		right: 0;
 		left: 0;
-		z-index: 999;
+		z-index: 700;
 		background-color: #efefef;
 		display: flex;
 		flex-direction: row;
@@ -161,7 +262,7 @@ p {
 		display: none;
 	}
 
-	.menu {
+	.menu-button {
 		display: none;
 	}
 
@@ -267,5 +368,76 @@ p {
 		line-height: 0.975em;
 		width: 270px;
 		text-align: left;
+	}
+
+	.menu-button {
+		display: none;
+	}
+
+	.intro {
+		margin: 0 10vw;
+		flex-direction: row;
+		flex-wrap: wrap;
+		background-color: transparent;
+	}
+
+	.col1 {
+		width: 40%;
+		margin: 1em 1em 1em -1em;
+	}
+
+	.img1 {
+		display: block;
+		width: 60%;
+		margin: 1em -1em 1em 1em;
+		background-image: url(../img/pink-mustang.jpeg);
+		background-size: cover;
+		box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	}
+
+	/* .img1-inner {
+		width: 100%;
+		height: 100%;
+		background-image: url(../img/pink-mustang.jpeg);
+		background-size: cover;
+	} */
+
+	.col2 {
+		background: transparent;
+		background-image: none;
+		width: 35%;
+		padding: 3em 1em;
+		margin: 1em -1em 1em 1em;
+	}
+
+	.col2:before {
+		display: none;
+	}
+
+	.img2 {
+		background-image: url(../img/pink-stable.jpg);
+		background-size: cover;
+		background-position: 50%;
+		box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+		width: 65%;
+		margin: 1em 1em 1em -1em;
+	}
+
+	.col3{
+		width: 100%;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		flex-wrap: wrap;
+		background: #BEBEBE;
+	}
+
+	.col3 h2 {
+		text-align: center;
+	}
+
+	.col3 li {
+		padding: 0.3em;
+		text-align: center;
 	}
 }

@@ -8,24 +8,85 @@
     <link href="https://fonts.googleapis.com/css?family=Arvo&display=swap" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="css/normalize.css">
     <link rel="stylesheet" type="text/css" href="css/mainflex.css">
+    <script type="text/javascript" src="app.js"></script>
     <title>Horses and Hope</title>
 </head>
 <body>
     <div class="banner">    
         <img src="img/logovector.png" alt="Horses and Hope Logo" id="logo">
-        <img src="img/menu.png" alt="Hamburger menu icon" class="menu">
-            <ul class="main-nav">
-                <li><a href="indexflex.html">About</a></li>
-                <li><a href="screenings.html">Screenings</a></li>
-                <img src="img/logovector.png" alt="Horses and Hope Logo" id="nav-logo" a href="indexflex.html">
-                <li><a href="events.html">Events</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
+        <div class="dropdown-menu">
+            <button onclick="myFunction()" class="menu-button"><img src="img/menu.png" alt="Hamburger menu icon" class="menu"></button>
+            <div id="myDropdown" class="dropdown-content">
+                <a href="indexflex.html">About</a>
+                <a href="screenings.html">Screenings</a>
+                <a href="events.html">Events</a>
+                <a href="contact.html">Contact</a>
+            </div>
+        </div>
+        <ul class="main-nav">
+            <li><a href="indexflex.html">About</a></li>
+            <li><a href="screenings.html">Screenings</a></li>
+            <img src="img/logovector.png" alt="Horses and Hope Logo" id="nav-logo" a href="indexflex.html">
+            <li><a href="events.html">Events</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
     </div>
     <div class="main-page">
         <div class="title">
             <h1>HORSES <br>&ensp;<i>and</i> HOPE</h1>
                 <h2 class="mission">Increasing cancer awareness, education, screenings, and treatment referrals among Kentucky equine industry workers and their families.</h2>
+        </div>
+    </div>
+
+    <div class="intro">
+        <div class="col col1">
+            <h2>About Us</h2>
+                <p>Horses and Hope is a project of former First Lady Jane Beshear and the Kentucky Cancer Program at the University of Louisville. 
+                    The project is also supported by the Pink Stable, a committee of Kentucky horse owners, riders, trainers, farm owners, and jockeys. 
+                    The original mission was to increase breast cancer awareness, education, screening and treatment referral among Kentucky's signature 
+                    horse industry workers and their families, many of whom are uninsured and underserved.  Special events were also held throughout 
+                    the Beshear administration to honor breast cancer survivors and to raise funds for Horses and Hope.  Today, Horses and Hope has 
+                    been expanded to offer prevention and early detection programs for seven different cancers.</p>
+        </div>
+
+        <div class="col img1">
+            <div class="img1-inner"></div>
+        </div>
+
+        <div class="col img2">
+        </div>
+
+        <div class="col col2">
+            <h2 class="stable-title">Pink Stable Members</h2>
+                <div class="stable">
+                    <ul class="stable-list">
+                        <li>Anita Cauley</li>
+                        <li>Patricia Cooksey</li>
+                        <li>Carol Farmer</li>
+                        <li>Ann Bakhaus</li>
+                        <li>Mary Midkiff</li>
+                    </ul>
+                    <ul class="stable-list">
+                        <li>Judy Miller</li>
+                        <li>Misdee Miller</li>
+                        <li>Barbara Thomason</li>
+                        <li>Elaine Walker</li>
+                        <li>Donna Ward</li>
+                    </ul>
+                </div>  
+        </div>
+
+        <div class="col col3">
+            <h2>Thank You to Our Sponsors</h2>
+                <ul>
+                    <li>Alltech</li>
+                    <li>Airdrie Stud</li>
+                    <li>Churchill Downs</li>
+                    <li>Darley</li>
+                    <li>Ellis Park</li>
+                    <li>Keeneland</li>
+                    <li>WinStar Farms</li>
+                </ul>
         </div>
     </div>
     
