@@ -1,4 +1,4 @@
-/* Header */
+/* Universal Styling */
 
 * {
 	box-sizing: border-box;
@@ -11,13 +11,12 @@ body {
 	background-size: cover;
 }
 
-.banner {
-	position: relative;
+/* Navigation Menu */
+
+.top-menu {
+	position: fixed;
 	width: 100%;
-	overflow: hidden;
-	top: 0;
-	right: 0;
-	left: 0;
+	height: 50px;
 	z-index: 700;
 	background-color: #efefef;
 	display: flex;
@@ -33,9 +32,7 @@ body {
 	padding-left: 1vw;
 }
 
-/* Menu */
-
-.menu {
+#hamburger-menu {
 	max-height: 2em;
 }
 
@@ -44,20 +41,23 @@ body {
 	cursor: pointer;
 	background-color: transparent;
 	margin-right: 10px;
+	z-index: 901;
 }
 
 .menu-button:hover, .menu-button:focus {
 	border: solid black 1px;
 }
 
-.dropdown {
-	position: relative;
-	display: inline-block;
+.dropdown-menu {
+	display: flex;
+	flex-direction: column;
 }
 
 .dropdown-content {
 	display: none;
 	position: absolute;
+	top: 45px;
+	right: 20px;
 	background-color: pink;
 	min-width: 160px;
 	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
@@ -79,7 +79,7 @@ body {
 	display: none;
 }
 
-/* Mission Styling */
+/* Mission Banner Styling */
 
 h1 {
 	color: #F90B6D; 
@@ -234,20 +234,12 @@ p {
 /* Media Queries */
 
 @media only screen and (min-width: 550px) {
-	* {
-		box-sizing: border-box;
-		font-family: 'Open Sans', sans-serif; 
-	}
 
-	body {
-		background-color: #efefef;
-		background-repeat: no-repeat;
-		background-size: cover;
-	}
-
-	.banner {
+	.top-menu {
 		padding: 0.5em;
+		position: static;
 		width: 100%;
+		height: auto;
 		overflow: hidden;
 		right: 0;
 		left: 0;
@@ -321,7 +313,7 @@ p {
 		font-weight: 300; 
 		line-height: 32px; 
 		margin: 0 0 14px; } */
-
+/* 
 
 	p { 
 		color: #222; 
@@ -329,36 +321,15 @@ p {
 		font-size: 15px; 
 		font-weight: 400; 
 		line-height: 24px; 
-		margin: 0 0 14px; }
+		margin: 0 0 14px; } */
 }
 
 @media only screen and (min-width: 833px) {
 
+	
 	.main-page {
 		height: 60vh;
 		width: 100%;
-	}
-
-	.title {
-		/* margin-right: 25%; */
-		margin-left: 12%;
-		display: flex;
-		flex-direction: column;
-		align-items: center;
-		justify-content: center;
-		border-radius: 25px;
-		border: solid 1px #efefef;
-		padding: 20px 20px 5px 20px;
-		width: 350px;
-		background-color: rgba(86, 84, 83, 0.7);
-	}
-
-
-	.title h1 {
-		font-family: 'Arvo', serif;
-		color: #efefef;
-		font-size: 3.375em;  
-		line-height: 35px; 
 	}
 
 	.mission {
@@ -392,6 +363,7 @@ p {
 		margin: 1em -1em 1em 1em;
 		background-image: url(../img/pink-mustang.jpeg);
 		background-size: cover;
+		background-position: center;
 		box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 	}
 
