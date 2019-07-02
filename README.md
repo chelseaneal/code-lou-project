@@ -1,8 +1,8 @@
-# Project_Name
+# Horses and Hope
 
 ## Description
 ```
-A brief description of your project
+This is my capstone project for a 12-week Front End Development course through Code Louisville. I created a mock-up website for a local non-profit, to demonstrate my understanding of HTML, CSS, and JavaScript. 
 
 ```
 
@@ -25,7 +25,10 @@ The class(es) I created are:
 ```
 The javascript functions I created are:
 
-1. function name ex( animate() )
-.. what function does ex( animate() is used to move the elements in the info div across the screen)
+1. $('.dropdown-content').hide();
+.. This function hides the dropdown menu in mobile format
+
+2. $('#menu-icons').click()
+.. This function toggles the dropdown menu in mobile format, and also toggles between a hamburger menu icon and exit icon
 
 ```
