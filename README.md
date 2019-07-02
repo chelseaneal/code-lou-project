@@ -2,7 +2,7 @@
 
 ## Description
 ```
-This is my capstone project for a 12-week Front End Development course through Code Louisville. I created a website for a local non-profit that my mother co-founded, to demonstrate my understanding of HTML, CSS, and JavaScript. 
+This is my capstone project for a 12-week Front End Development course through Code Louisville. I created a mock-up website for a local non-profit, to demonstrate my understanding of HTML, CSS, and JavaScript. 
 
 ```
 
