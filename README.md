@@ -11,6 +11,8 @@ I created a mock-up website for a local non-profit, to demonstrate my understand
 This website can be previewed at https://chelseaneal.github.io/horses-and-hope/
 
 It can also be cloned onto local device using git. 
+
+Index.html is the home page.
 ```
 
 
